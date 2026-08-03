@@ -3,8 +3,8 @@
   "packages": [
     "terraform@1.15.8",
     "tflint@0.64.0",
-    "checkov@3.2.533",
-    "terraform-docs@0.22.0"
+    "terraform-docs@0.22.0",
+    "checkov@3.2.533"
   ],
   "shell": {
     "init_hook": [

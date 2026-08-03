@@ -51,6 +51,10 @@
         }
       }
     },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "last_modified": "2026-07-23T21:30:14Z",
+      "resolved": "github:NixOS/nixpkgs/91cc1fdf6831e29b6c98768e721a72241f3d0797?lastModified=1784842214&narHash=sha256-5RtCAzg%2Fn1n2Yp0mtDiZzZFJzvqR4jHleWeqD7b5G14%3D"
+    },
     "terraform-docs@0.22.0": {
       "last_modified": "2026-08-01T16:34:20Z",
       "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#terraform-docs",

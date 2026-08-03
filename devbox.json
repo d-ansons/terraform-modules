@@ -1,11 +1,14 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.5/.schema/devbox.schema.json",
-  "packages": [
-    "terraform@1.15.8",
-    "tflint@0.64.0",
-    "terraform-docs@0.22.0",
-    "checkov@3.2.533"
-  ],
+  "packages": {
+    "terraform":      "1.15.8",
+    "tflint":         "0.64.0",
+    "terraform-docs": "0.22.0",
+    "checkov": {
+      "version":        "3.2.533",
+      "allow_insecure": ["python3.13-ecdsa-0.19.2"]
+    }
+  },
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null"

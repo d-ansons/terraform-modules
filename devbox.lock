@@ -55,6 +55,45 @@
       "last_modified": "2026-07-23T21:30:14Z",
       "resolved": "github:NixOS/nixpkgs/91cc1fdf6831e29b6c98768e721a72241f3d0797?lastModified=1784842214&narHash=sha256-5RtCAzg%2Fn1n2Yp0mtDiZzZFJzvqR4jHleWeqD7b5G14%3D"
     },
+    "nodejs@22": {
+      "last_modified": "2026-08-01T16:34:20Z",
+      "plugin_version": "0.0.4",
+      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#nodejs_22",
+      "source": "devbox-search",
+      "version": "22.23.2",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/s0qzknz77k3lzikgywx2piilfp8w0581-nodejs-22.23.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/s0qzknz77k3lzikgywx2piilfp8w0581-nodejs-22.23.2"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/i7dq81ramvcyrzasgv8qbf07rgfiqiai-nodejs-22.23.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/i7dq81ramvcyrzasgv8qbf07rgfiqiai-nodejs-22.23.2"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3vm4j8im8bzdal3dsgmhv9gb5kvanbp1-nodejs-22.23.2",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3vm4j8im8bzdal3dsgmhv9gb5kvanbp1-nodejs-22.23.2"
+        }
+      }
+    },
     "terraform-docs@0.22.0": {
       "last_modified": "2026-08-01T16:34:20Z",
       "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#terraform-docs",

@@ -1,0 +1,14 @@
+{
+  "name": "azure-storage-account",
+  "root": "azure/azure-storage-account",
+  "projectType": "library",
+  "tags": ["terraform", "azure", "storage"],
+  "targets": {
+    "fmt": { "command": "terraform fmt -check -diff", "options": { "cwd": "azure/azure-storage-account" } },
+    "validate": { "command": "terraform validate", "options": { "cwd": "azure/azure-storage-account" }, "dependsOn": ["init"] },
+    "init": { "command": "terraform init -backend=false", "options": { "cwd": "azure/azure-storage-account" } },
+    "lint": { "command": "tflint", "options": { "cwd": "azure/azure-storage-account" } },
+    "security-scan": { "command": "checkov -d .", "options": { "cwd": "azure/azure-storage-account" } },
+    "docs": { "command": "terraform-docs markdown table --output-file README.md .", "options": { "cwd": "azure/azure-storage-account" } }
+  }
+}

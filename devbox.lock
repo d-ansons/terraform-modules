@@ -1,0 +1,179 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "checkov@3.2.533": {
+      "last_modified": "2026-06-11T01:27:03Z",
+      "resolved": "github:NixOS/nixpkgs/b503dde361500433ca25a32e8f4d218bf58fb659#checkov",
+      "source": "devbox-search",
+      "version": "3.2.533",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/y5g3z9xf15b3kks4w3z5x5qfpw982fbi-checkov-3.2.533",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/mdn69kmqmysrdkwc7d5lbykh1iaf9z0p-checkov-3.2.533-dist"
+            }
+          ],
+          "store_path": "/nix/store/y5g3z9xf15b3kks4w3z5x5qfpw982fbi-checkov-3.2.533"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/mism2r4xkaj2f1b23zgrz2vkidlfq6xw-checkov-3.2.533",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/arz66vwczzgpkbymmcx43x8dn4853gnp-checkov-3.2.533-dist"
+            }
+          ],
+          "store_path": "/nix/store/mism2r4xkaj2f1b23zgrz2vkidlfq6xw-checkov-3.2.533"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7h6cjdxvnkfsy9i3ahck4q73y2kx7qj6-checkov-3.2.533",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/52p66g29kziknar3r2j8hk4zz9si5vss-checkov-3.2.533-dist"
+            }
+          ],
+          "store_path": "/nix/store/7h6cjdxvnkfsy9i3ahck4q73y2kx7qj6-checkov-3.2.533"
+        }
+      }
+    },
+    "terraform-docs@0.22.0": {
+      "last_modified": "2026-08-01T16:34:20Z",
+      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#terraform-docs",
+      "source": "devbox-search",
+      "version": "0.22.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wxmdpgdh9cnygp9zpa1sqhy41ay9ssih-terraform-docs-0.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wxmdpgdh9cnygp9zpa1sqhy41ay9ssih-terraform-docs-0.22.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/bpzr1hgj88ldkhs0psgsfkvprkz42g4k-terraform-docs-0.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/bpzr1hgj88ldkhs0psgsfkvprkz42g4k-terraform-docs-0.22.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/l18gp2h1qv1dyqs1ri3dii5gz8z8qwgw-terraform-docs-0.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/l18gp2h1qv1dyqs1ri3dii5gz8z8qwgw-terraform-docs-0.22.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lirva2x6hbb0yzrmwc56gp7w38jadgyv-terraform-docs-0.22.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/lirva2x6hbb0yzrmwc56gp7w38jadgyv-terraform-docs-0.22.0"
+        }
+      }
+    },
+    "terraform@1.15.8": {
+      "last_modified": "2026-08-01T16:34:20Z",
+      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#terraform",
+      "source": "devbox-search",
+      "version": "1.15.8",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/zadj9gfykqnrv64v3vk2krf0i53r4s11-terraform-1.15.8",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/zadj9gfykqnrv64v3vk2krf0i53r4s11-terraform-1.15.8"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/vi095xlgsgi7xsd79l49l27mlzx5wny4-terraform-1.15.8",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/vi095xlgsgi7xsd79l49l27mlzx5wny4-terraform-1.15.8"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/q20n31gwj6ila5lzmsbxgxi103z21xx5-terraform-1.15.8",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/q20n31gwj6ila5lzmsbxgxi103z21xx5-terraform-1.15.8"
+        }
+      }
+    },
+    "tflint@0.64.0": {
+      "last_modified": "2026-08-01T16:34:20Z",
+      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#tflint",
+      "source": "devbox-search",
+      "version": "0.64.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/34xm9gh9lp3fs95b0zzhs52fvsxfi24z-tflint-0.64.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/34xm9gh9lp3fs95b0zzhs52fvsxfi24z-tflint-0.64.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wqv19fzmqi57q7vj2jcbvrygkh4zq7fl-tflint-0.64.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wqv19fzmqi57q7vj2jcbvrygkh4zq7fl-tflint-0.64.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0x3wir8y515aq3fgnzcp54wpl5vrsavx-tflint-0.64.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0x3wir8y515aq3fgnzcp54wpl5vrsavx-tflint-0.64.0"
+        }
+      }
+    }
+  }
+}

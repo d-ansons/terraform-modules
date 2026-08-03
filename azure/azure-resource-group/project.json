@@ -1,0 +1,14 @@
+{
+  "name": "azure-resource-group",
+  "root": "azure/azure-resource-group",
+  "projectType": "library",
+  "tags": ["terraform", "azure"],
+  "targets": {
+    "fmt": { "command": "terraform fmt -check -diff", "options": { "cwd": "azure/azure-resource-group" } },
+    "validate": { "command": "terraform validate", "options": { "cwd": "azure/azure-resource-group" }, "dependsOn": ["init"] },
+    "init": { "command": "terraform init -backend=false", "options": { "cwd": "azure/azure-resource-group" } },
+    "lint": { "command": "tflint", "options": { "cwd": "azure/azure-resource-group" } },
+    "security-scan": { "command": "checkov -d .", "options": { "cwd": "azure/azure-resource-group" } },
+    "docs": { "command": "terraform-docs markdown table --output-file README.md .", "options": { "cwd": "azure/azure-resource-group" } }
+  }
+}

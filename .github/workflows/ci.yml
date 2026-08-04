@@ -1,0 +1,28 @@
+name: CI
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  affected:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: jetify-com/devbox-install-action@v0.11.0
+        with:
+          enable-cache: true
+
+      - run: devbox run -- npm ci
+
+      - uses: nrwl/nx-set-shas@v4
+
+      - uses: actions/cache@v4
+        with:
+          path: .nx/cache
+          key: nx-cache-${{ runner.os }}-${{ github.sha }}
+          restore-keys: nx-cache-${{ runner.os }}-
+
+      - run: devbox run -- npx nx affected -t fmt,validate,lint,security-scan,docs

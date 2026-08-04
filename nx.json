@@ -9,7 +9,36 @@
     "production": [
       "default"
     ],
-    "sharedGlobals": []
+    "sharedGlobals": ["{workspaceRoot}/.tflint.hcl", "{workspaceRoot}/.checkov.yaml"]
+  },
+  "targetDefaults": {
+    "init": {
+      "cache": false,
+      "inputs": ["{projectRoot}/**/*.tf"],
+      "outputs": ["{projectRoot}/.terraform"]
+    },
+    "fmt": {
+      "cache": true,
+      "inputs": ["{projectRoot}/**/*.tf"]
+    },
+    "validate": {
+      "cache": true,
+      "dependsOn": ["init"],
+      "inputs": ["{projectRoot}/**/*.tf"]
+    },
+    "lint": {
+      "cache": true,
+      "inputs": ["{projectRoot}/**/*.tf", "{workspaceRoot}/.tflint.hcl"]
+    },
+    "security-scan": {
+      "cache": true,
+      "inputs": ["{projectRoot}/**/*.tf"]
+    },
+    "docs": {
+      "cache": true,
+      "inputs": ["{projectRoot}/**/*.tf"],
+      "outputs": ["{projectRoot}/README.md"]
+    }
   },
   "plugins": [
     {

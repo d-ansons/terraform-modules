@@ -61,13 +61,41 @@ variable "account_tier" {
 
 variable "account_replication_type" {
   type        = string
-  default     = "ZRS"
+  default     = "GRS"
   description = "Defines the replication type to use for this Storage Account."
 
   validation {
     condition     = contains(["LRS", "GRS", "RAGRS", "ZRS", "GZRS", "RAGZRS"], var.account_replication_type)
     error_message = "Replication type must be; `LRS`, `GRS`, `RAGRS`, `ZRS`, `GZRS` or `RAGZRS`"
   }
+}
+
+variable "soft_delete_retention_days" {
+  type        = number
+  default     = 7
+  description = "Number of days that soft-deleted blobs are retained before permanent deletion."
+
+  validation {
+    condition     = var.soft_delete_retention_days >= 1 && var.soft_delete_retention_days <= 365
+    error_message = "Soft delete retention days must be between 1 and 365."
+  }
+}
+
+variable "queue_logging_retention_days" {
+  type        = number
+  default     = 7
+  description = "Number of days that Queue service read/write/delete logs are retained."
+
+  validation {
+    condition     = var.queue_logging_retention_days >= 1 && var.queue_logging_retention_days <= 365
+    error_message = "Queue logging retention days must be between 1 and 365."
+  }
+}
+
+variable "sas_expiration_period" {
+  type        = string
+  default     = "7.00:00:00"
+  description = "Expiration period for SAS tokens issued against this Storage Account, in `DD.HH:MM:SS` format."
 }
 
 variable "infrastructure_encryption_enabled" {
@@ -101,3 +129,8 @@ variable "allow_nested_items_to_be_public" {
   description = "Enable or disable public network access for nested items within the Storage Account."
 }
 
+variable "shared_access_key_enabled" {
+  type        = bool
+  default     = false
+  description = "Enable or disable the shared access key."
+}
